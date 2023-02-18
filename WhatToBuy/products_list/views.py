@@ -1,7 +1,8 @@
 from django.shortcuts import render
 from .models import ShoppingList, ShoppingItem
 
-
+def home(request):
+    return render(request, "home.html")
 
 def my_lists(request):
     shopping_lists = ShoppingList.objects.all()
