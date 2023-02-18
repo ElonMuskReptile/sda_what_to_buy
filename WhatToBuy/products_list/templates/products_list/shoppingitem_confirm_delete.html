@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+    <form method='POST' action="#">
+        {% csrf_token %}
+        <p>You are going to delete {{object}}</p>
+        <img src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fwompampsupport.azureedge.net%2Ffetchimage%3FsiteId%3D7575%26v%3D2%26jpgQuality%3D100%26width%3D700%26url%3Dhttps%253A%252F%252Fi.ytimg.com%252Fvi%252FXdL4yM7mEcg%252Fhqdefault.jpg&imgrefurl=https%3A%2F%2Fknowyourmeme.com%2Fmemes%2Fomg-cat&tbnid=IiFrXRM55g69SM&vet=12ahUKEwjE5ZWB2J79AhWLCHcKHWxhAqAQMygDegUIARDYAQ..i&docid=Sp0bRlNolhCVoM&w=480&h=360&q=surprised%20cat&ved=2ahUKEwjE5ZWB2J79AhWLCHcKHWxhAqAQMygDegUIARDYAQ" height="150px">
+        <p>Are you sure?</p>
+        
+        <button class="btn btn-primary" type="submit">Confirm</button>
+    </form>        
+{% endblock content %}
+    
